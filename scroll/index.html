@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll</title>
+	<link rel="stylesheet" type="text/css" href="resource/reset.css">
+	<style type="text/css">
+		body{
+			background:#ccc;
+		}
+		.scroll-demo{
+			width: 540px;
+			border:1px solid #e5e5e5;
+			background:#fff;
+			margin:30px auto ;
+		}
+		.scroll-tab{
+			height: 34px;
+			border-bottom:1px solid #e5e5e5;
+			color:#666;
+			background:#f8f8f8;
+		}
+		.scroll-tab .tab-item{
+			float:left;
+			font:14px/34px "Microsoft Yahei";
+			height: 34px;
+			text-align:center;
+			border-right:1px solid #e5e5e5;
+			padding:0 20px;
+		}
+		.scroll-tab .tab-active{
+			color:#00be3c;
+			background:#fff;
+			border-top:2px solid #00be3c;
+			margin:-1px 0 ;
+		}
+		.scroll-wrap{
+			position:relative;
+			width: 100%;
+			height: 300px;
+		}
+		.scroll-wrap .scroll-cont{
+			height: 100%;
+			padding: 0 15px;
+			overflow:hidden;
+		}
+		.scroll-wrap .scroll-cont h3{
+			font:16px/3 "Microsoft Yahei";
+			text-align:center;
+		}
+		.scroll-wrap .scroll-cont p{
+			font-size:14px;
+			line-height:20px;
+			text-indent:2em;
+			margin-bottom:10px;
+		}
+		.scroll-wrap .scroll-bar{
+			position: absolute;
+			top:0;
+			right:0;
+			width: 10px;
+			height: 100%;
+			background-color: #eaeaea;
+		}
+		.scroll-wrap .scroll-slider{
+			position:absolute;
+			top:0;
+			left:1px;
+			width: 8px;
+			height: 30px;
+			background-color: #FFF;
+		}
+	</style>
+</head>
+<body>
+	<!--示例容器-->
+	<div class="scroll-demo">
+		<!--标签切换-->
+		<ul class="scroll-tab clearfix">
+			<li class="tab-item tab-active">Chapter1</li>
+			<li class="tab-item">Chapter2</li>
+			<li class="tab-item">Chapter3</li>
+			<li class="tab-item">Chapter4</li>
+		</ul>
+		<!--滚动内容区-->
+		<div class="scroll-wrap">
+			<!--滚动内容-->
+			<div class="scroll-cont">
+				<h3 class="anchor">春天来了</h3>
+				<div class="scroll-ol">
+					<p>
+						JQuery是继prototype之后又一个优秀的Javascript库。它是轻量级的js库 ，它兼容CSS3，还兼容各种浏览器（IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+），jQuery2.0及后续版本将不再支持IE6/7/8浏览器。jQuery使用户能更方便地处理HTML（标准通用标记语言下的一个应用）、events、实现动画效果，并且方便地为网站提供AJAX交互。jQuery还有一个比较大的优势是，它的文档说明很全，而且各种应用也说得很详细，同时还有许多成熟的插件可供选择。jQuery能够使用户的html页面保持代码和html内容分离，也就是说，不用再在html里面插入一堆js来调用命令了，只需要定义id即可。<br>
+					</p>
+					<p>
+						jQuery是一个兼容多浏览器的javascript库，核心理念是write less,do more(写得更少,做得更多)。jQuery在2006年1月由美国人John Resig在纽约的barcamp发布，吸引了来自世界各地的众多JavaScript高手加入，由Dave Methvin率领团队进行开发。如今，jQuery已经成为最流行的javascript库，在世界前10000个访问最多的网站中，有超过55%在使用jQuery<br>
+					</p>
+				</div>
+				<h3 class="anchor">夏天来了</h3>
+				<div class="scroll-ol">
+					<p>
+						2007年7月，jQuery 1.1.3版发布，这次小版本的变化包含了对jQuery选择符引擎执行速度的显著提升。从这个版本开始，jQuery的性能达到了Prototype、Mootools以及Dojo等同类JavaScript库的水平。同年9月，jQuery 1.2版发布，它去掉了对XPath选择符的支持，原因是相对于CSS语法它已经变得多余了。这一版能够对效果进行更为灵活的定制，而且借助新增的命名空间事件，也使插件开发变得更容易。同时，jQuery UI项目也开始启动，这个新的套件是作为曾经流行但已过时的Interface插件的替代项目而发布的。jQuery UI中包含大量预定义好的部件（widget），以及一组用于构建高级元素（例如可拖放、拖拽、排序）的工具。<br>
+					</p>
+				</div>
+				<h3 class="anchor">秋天来了</h3>
+				<div class="scroll-ol">
+					<p>
+						标准通用标记语言下的一个应用HTML标准自1999年12月发布的HTML4.01后，后继的HTML5和其它标准被束之高阁，为了推动Web标准化运动的发展，一些公司联合起来，成立了一个叫做 Web Hypertext Application Technology Working Group （Web超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web 表单和应用程序，而W3C（World Wide Web Consortium，万维网联盟） 专注于XHTML2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。
+						HTML5草案的前身名为 Web Applications 1.0，于2004年被WHATWG提出，于2007年被W3C接纳，并成立了新的 HTML 工作团队。
+						HTML 5 的第一份正式草案已于2008年1月22日公布。HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
+						2012年12月17日，万维网联盟（W3C）正式宣布凝结了大量网络工作者心血的HTML5规范已经正式定稿。根据W3C的发言稿称：“HTML5是开放的Web网络平台的奠基石。” <br>
+					</p>
+				</div>
+				<h3 class="anchor">冬天来了</h3>
+				<div class="scroll-ol">
+					<p>
+						HTML5将会取代1999年制定的HTML 4.01、XHTML 1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到符合当代的网络需求，为桌面和移动平台带来无缝衔接的丰富内容。
+						W3C CEO Jeff Jaffe博士表示：“HTML5将推动Web进入新的时代。不久以前，Web还只是上网看一些基础文档，而如今，Web是一个极大丰富的平台。我们已经进入一个稳定阶段，每个人都可以按照标准行事，并且可用于所有浏览器。如果我们不能携起手来，就不会有统一的Web。”
+						HTML5还有望成为梦想中的“开放Web平台”(Open Web Platform)的基石，如能实现可进一步推动更深入的跨平台Web应用。
+						接下来，W3C将致力于开发用于实时通信、电子支付、应用开发等方面的标准规范，还会创建一系列的隐私、安全防护措施。
+						W3C还曾在2012年透露说，计划在2016年底前发布HTML 5.1。<br>
+					</p>
+				</div>
+			</div>
+			<!--滚动条-->
+			<div class="scroll-bar">
+				<!--滚动滑块-->
+				<div class="scroll-slider"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="resource/jquery-3.1.0.js"></script>
+		<script type="text/javascript" src="resource/font.js"></script>
+
+	</div>
+</body>
+</html>
