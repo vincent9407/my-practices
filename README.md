@@ -1,2 +1,2 @@
 # my-practices
-Just some test
+Just some practices
